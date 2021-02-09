@@ -9,9 +9,17 @@ function ten_minute_walk(step){
         if (walk == 's'){
             ns =- 1;
         }
+        if (walk == 'w'){
+            we =+ 1;
+        }
+        if (walk == 'e'){
+            we =- 1;
+        }
     }
 
-if (ns == 0 && we == 0){
+if (ns == 0 && we == 0 && step.length == 10){
     return true
+} else{
+    return false
 }
 }
