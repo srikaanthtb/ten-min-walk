@@ -2,18 +2,18 @@ function ten_minute_walk(step){
     let ns = 0;
     let we = 0;
 
-    for (let walk in step) {
+    for (let walk of step) {
         if (walk == 'n'){
-            ns =+ 1;
+            ns += 1;
         }
         if (walk == 's'){
-            ns =- 1;
+            ns -= 1;
         }
         if (walk == 'w'){
-            we =+ 1;
+            we += 1;
         }
         if (walk == 'e'){
-            we =- 1;
+            we -= 1;
         }
     }
 
